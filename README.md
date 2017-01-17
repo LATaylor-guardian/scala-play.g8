@@ -11,7 +11,7 @@ This template provides a project setup for:
  - Integration for Play Google Auth
  - Code formatting with Scalariform
  - Deploying via Riff Raff
- - a systemd file to run your application
+ - A systemd file to run your application
  - An example test for the healthcheck endpoint
  - A working logback.xml file integrated with the application.
  - A basic cloudformation template for putting your service on AWS
