@@ -25,4 +25,6 @@ Then:
 sbt new guardian/scala-play.g8
 ```
 
-Move to your new project and it should compile and run. Now you can begin customising for your specific projects needs and get started!
+You will be asked to fill out some properties required for correctly building your project.
+
+Once done, move to your new project and it should compile and run. Now you can begin customising for your specific projects needs and get started!
