@@ -1,6 +1,6 @@
 
 name := "$name$"
-description:= "$description$"
+description:= "$project_description$"
 
 scalaVersion := "2.11.8"
 organization := "com.gu"
