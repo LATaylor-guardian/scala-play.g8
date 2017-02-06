@@ -25,22 +25,12 @@ scalacOptions ++= Seq(
 
 scalacOptions in doc in Compile := Nil
 
-lazy val root = (project in file(".")).enablePlugins(PlayScala, RiffRaffArtifact, JavaAppPackaging, UniversalPlugin)
-
-mappings in Universal ++= (baseDirectory.value / "resources" *** ).get pair relativeTo(baseDirectory.value)
-
-riffRaffPackageType := (packageZipTarball in config("universal")).value
-riffRaffUploadArtifactBucket := Option("riffraff-artifact")
-riffRaffUploadManifestBucket := Option("riffraff-builds")
-riffRaffManifestProjectName := "$riffRaff_manifest_project_name$"
-
-addCommandAlias("dist", ";riffRaffArtifact")
+enablePlugins(PlayScala)
 
 resolvers += "Sonatype releases" at "https://oss.sonatype.org/content/repositories/releases"
 
 libraryDependencies ++= Seq(
   ws,
-  "com.gu" %% "play-googleauth" % "$play_googleauth_version$",
   "org.scalatest" %% "scalatest" % "$scalatest_version$" % "test",
   "org.scalatestplus.play" %% "scalatestplus-play" % "$scalatestplay_version$" % Test
 )
