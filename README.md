@@ -13,7 +13,7 @@ To use, ensure you have SBT 0.13.13 or higher, or G8
 Then:
 
 ```
-sbt new LA-Taylor-guardian/scala-play.g8
+sbt new LATaylor-guardian/scala-play.g8
 ```
 
 You will be asked to fill out some properties required for correctly building your project.
